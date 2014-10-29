@@ -43,7 +43,7 @@ void loop()
 {
 
   /*
-  analoogWaardeEen  = analogRead(A0);
+   analoogWaardeEen  = analogRead(A0);
    analoogWaardeTwee = analogRead(A1);
    analoogWaardeDrie = analogRead(A2);
    analoogWaardeVier = analogRead(A3);
@@ -103,7 +103,7 @@ void loop()
 
 
 
-  /*  if(analoogWaardeEen>400 )
+ /*if(analoogWaardeEen>400 )
    { 
    a = 1;
    digitalWrite(ledA,HIGH);
@@ -165,14 +165,12 @@ void loop()
    Serial.println(b);
    Serial.println(c);
    Serial.println(d);
-   
-   */
+*/
 
 }
 
 void rechtdoor()
 {
-
   linkerservo.write(2400);
   rechterservo.write(544);
   Serial.println("rechtdoor aangeroepen");
@@ -182,12 +180,10 @@ void links ()
 {
   linkerservo.write(1200);
   rechterservo.write(1200);
-
 }
 
 void rechts ()
 {
-
   linkerservo.write(1800);
   rechterservo.write(1800);
 }
